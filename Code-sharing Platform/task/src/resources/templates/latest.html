@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Latest</title>
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="snippets-container">
+    <!-- For single -->
+    <div th:if="${snippet != null}" class="snippet-card">
+        <pre class="code-snippet"><code th:text="${snippet.code}"></code></pre>
+        <span class="load-date" th:text="${snippet.date}"></span>
+    </div>
+    <!-- For list -->
+    <div th:if="${snippets != null}" th:each="snippet : ${snippets}" class="snippet-card">
+        <pre class="code-snippet">
+            <code th:text="${snippet.code}"></code>
+        </pre>
+        <span class="load-date" th:text="${snippet.date}"></span>
+    </div>
+</div>
+</body>
+</html>
