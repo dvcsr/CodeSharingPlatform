@@ -1,8 +1,12 @@
 This is the *Code-sharing Platform* project I made myself.
 
 
-<p>There is a lot of collaboration in programming: many projects require sharing your code with other developers. Using open web resources such as Pastebin is not always an option. In this project, you will create your own secure version of a code-sharing platform.</p><br/><br/>Learn more at <a href="https://hyperskill.org/projects/130?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card">https://hyperskill.org/projects/130</a>
+In this project, I managed to successfully implement:
+- Show the same code snippet over and over in the API and the web interface
+- Use POST requests to update the snippet and make the program display the time of the most recent update.
+- Use the template engine FreeMarker to easily implement the latest snippets feed.
+- Use a database to store all the code snippets.
+- Implement a few access restrictions for the top-secret code snippets (time view limit and maximum view limit)
 
-Here's the link to the project: https://hyperskill.org/projects/130
 
-Check out my profile: https://hyperskill.org/profile/619182939
+My JetBrains Academy profile: https://hyperskill.org/profile/619182939
